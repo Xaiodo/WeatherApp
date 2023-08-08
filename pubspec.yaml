@@ -27,6 +27,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/fonts/SpaceMono-Regular.ttf
+    - assets/fonts/SpaceMono-Bold.ttf
+    - assets/fonts/SpaceMono-Italic.ttf
+    - assets/fonts/SpaceMono-BoldItalic.ttf
+    - assets/images/sliver_app_bar_bg.png
 
 scripts:
   build: flutter pub run build_runner build --delete-conflicting-outputs

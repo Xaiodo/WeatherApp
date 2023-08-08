@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/config/app_colors.dart';
 
 class AppTheme {
+  static const _fontFamily = 'SpaceMono';
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: AppColors.backgroundLightColor,
     appBarTheme: const AppBarTheme(
@@ -11,6 +12,7 @@ class AppTheme {
       backgroundColor: AppColors.appBarBackgroundLightColor,
       elevation: 0,
     ),
+    fontFamily: _fontFamily,
     textTheme: const TextTheme(
       // TODO: Add text styles
     ),
@@ -25,6 +27,7 @@ class AppTheme {
       backgroundColor: AppColors.containerDarkColor,
       elevation: 0,
     ),
+
     textTheme: const TextTheme(
       // TODO: Add text styles
     ),

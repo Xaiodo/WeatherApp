@@ -11,8 +11,8 @@ class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(
+  Widget build(BuildContext context) => 
+    MaterialApp.router(
       routeInformationParser: appRouter.routeInformationParser,
       routerDelegate: appRouter.routerDelegate,
       routeInformationProvider: appRouter.routeInformationProvider,
@@ -21,5 +21,4 @@ class MainApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       title: 'Weather App',
     );
-  }
 }
