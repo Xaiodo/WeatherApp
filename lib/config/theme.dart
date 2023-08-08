@@ -15,6 +15,7 @@ class AppTheme {
     fontFamily: _fontFamily,
     textTheme: const TextTheme(
       // TODO: Add text styles
+      
     ),
   );
 
