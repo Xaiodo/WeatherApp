@@ -9,6 +9,8 @@ class AppColors {
   static const Color backgroundLightColor = Color(0xfff6edff);
   static const Color appBarBackgroundLightColor = Color(0xffe1d3fa);
 
+
+
   // Dark colors
   static const Color primaryDarkColor = Color(0xffffffff); 
   static const Color secondaryDarkColor = Color(0xff144420); 
@@ -20,4 +22,6 @@ class AppColors {
   // Common colors
   static const Color white = Color(0xffffffff);
   static const Color black = Color(0xff000000);
+  static const Color valueIncreased = Color(0xff8a20d5);
+  static const Color valueDecreased = Color(0xffba1a1a);
 }

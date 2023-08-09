@@ -14,7 +14,36 @@ class AppTheme {
     ),
     fontFamily: _fontFamily,
     textTheme: const TextTheme(
-      // TODO: Add text styles
+      titleLarge: TextStyle(
+        fontSize: 32,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primaryLightColor,
+      ),
+      titleMedium: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primaryLightColor,
+      ),
+      titleSmall: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryLightColor,
+      ),
+      bodyLarge: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryLightColor,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryLightColor,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryLightColor,
+      ),
       
     ),
   );
@@ -30,7 +59,36 @@ class AppTheme {
     ),
 
     textTheme: const TextTheme(
-      // TODO: Add text styles
+      titleLarge: TextStyle(
+        fontSize: 32,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primaryDarkColor,
+      ),
+      titleMedium: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+        color: AppColors.primaryDarkColor,
+      ),
+      titleSmall: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryDarkColor,
+      ),
+      bodyLarge: TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryDarkColor,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryDarkColor,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: AppColors.primaryDarkColor,
+      ),
     ),
   );
 }
