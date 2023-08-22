@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/config/app_colors.dart';
+import 'package:weather_app/core/app_colors.dart';
 
 class AppTheme {
   static const _fontFamily = 'SpaceMono';
