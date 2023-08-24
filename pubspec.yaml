@@ -7,6 +7,7 @@ environment:
   sdk: '>=2.19.4 <3.0.0'
 
 dependencies:
+  dartz: ^0.10.1
   dio: ^5.3.2
   equatable: ^2.0.5
   flutter:
@@ -36,5 +37,5 @@ flutter:
     - assets/images/sliver_app_bar_bg.png
 
 scripts:
-  build: flutter pub run build_runner build --delete-conflicting-outputs
-  watch: flutter pub run build_runner watch
+  build: dart run build_runner build
+  watch: dart run build_runner watch
