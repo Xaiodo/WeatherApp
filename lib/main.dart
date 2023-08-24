@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:weather_app/config/router.dart';
-import 'package:weather_app/config/theme.dart';
+import 'package:weather_app/core/router.dart';
+import 'package:weather_app/core/values/theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: MainApp()));
