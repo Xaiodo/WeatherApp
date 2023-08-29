@@ -1,4 +1,4 @@
-import '../../../../core/utils/typedef.dart';
+import '../../../../core/result.dart';
 import '../entities/weather.dart';
 import '../repositories/weather_repository.dart';
 
@@ -7,6 +7,6 @@ class GetCachedWeather {
 
   final WeatherRepository _repository;
 
-  ResultFuture<WeatherEntity> call() => _repository.getCachedWeather();
+  Future<Result<WeatherEntity>> call() => _repository.getCachedWeather();
 
 }
