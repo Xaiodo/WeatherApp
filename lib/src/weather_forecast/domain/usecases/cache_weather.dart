@@ -1,3 +1,4 @@
+import 'package:weather_app/core/result.dart';
 import 'package:weather_app/src/weather_forecast/domain/entities/weather.dart';
 
 import '../repositories/weather_repository.dart';
@@ -7,5 +8,5 @@ class CacheWeather {
 
   final WeatherRepository _repository;
 
-  void call(WeatherEntity weather) => _repository.cacheWeather(weather);
+  Future<Result<void>> call(WeatherEntity weather) => _repository.cacheWeather(weather);
 }
