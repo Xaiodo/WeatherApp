@@ -1,11 +1,11 @@
-import 'package:weather_app/core/utils/typedef.dart';
-import 'package:weather_app/src/weather_forecast/domain/entities/weather.dart';
+import '../../../../core/result.dart';
+import '../entities/weather.dart';
 
 abstract class WeatherRepository {
-  ResultFuture<WeatherEntity> getWeatherByCityName(String cityName);
+  Future<Result<WeatherEntity>> getWeatherByCityName(String cityName);
 
-  ResultFuture<WeatherEntity> getCachedWeather();
+  Future<Result<WeatherEntity>> getCachedWeather();
 
-  Future<void> cacheWeather(WeatherEntity weather);
+  Future<Result> cacheWeather(WeatherEntity weather);
 }
 
