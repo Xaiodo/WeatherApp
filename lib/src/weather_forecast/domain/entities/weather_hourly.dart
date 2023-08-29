@@ -1,7 +1,8 @@
+import 'package:equatable/equatable.dart';
 import 'package:weather_app/core/enums.dart';
 
-abstract class WeatherHourlyEntity{
-  WeatherHourlyEntity({
+class WeatherHourlyEntity extends Equatable{
+  const WeatherHourlyEntity({
     required this.condition,
     required this.icon,
     required this.datetime,
@@ -36,4 +37,42 @@ abstract class WeatherHourlyEntity{
   final List<WeatherPrecipitationType> precipitationType;
   final double precipitationProbability;
   final double precipitation;
+
+  WeatherHourlyEntity.empty()
+      : condition = '',
+        icon = WeatherIcon.clearDay,
+        datetime = DateTime.now(),
+        temperature = 0,
+        tempMin = 0,
+        tempMax = 0,
+        feelsLike = 0,
+        humidity = 0,
+        windSpeed = 0,
+        pressure = 0,
+        uvIndex = 0,
+        snow = 0,
+        snowDepth = 0,
+        precipitationType = const [],
+        precipitationProbability = 0,
+        precipitation = 0;
+
+  @override
+  List<Object?> get props => [
+    condition,
+    icon,
+    datetime,
+    temperature,
+    tempMin,
+    tempMax,
+    feelsLike,
+    humidity,
+    windSpeed,
+    pressure,
+    uvIndex,
+    snow,
+    snowDepth,
+    precipitationType,
+    precipitationProbability,
+    precipitation,
+  ];
 }
