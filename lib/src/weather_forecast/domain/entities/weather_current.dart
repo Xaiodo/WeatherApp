@@ -1,7 +1,8 @@
+import 'package:equatable/equatable.dart';
 import 'package:weather_app/core/enums.dart';
 
-class WeatherCurrentEntity {
-  WeatherCurrentEntity({
+class WeatherCurrentEntity extends Equatable {
+  const WeatherCurrentEntity({
     required this.condition,
     required this.icon,
     required this.datetime,
@@ -32,4 +33,38 @@ class WeatherCurrentEntity {
   final List<WeatherPrecipitationType> precipitationType;
   final double precipitationProbability;
   final double precipitation;
+
+  WeatherCurrentEntity.empty()
+      : condition = '',
+        icon = WeatherIcon.clearDay,
+        datetime = DateTime.now(),
+        temperature = 0,
+        feelsLike = 0,
+        humidity = 0,
+        windSpeed = 0,
+        pressure = 0,
+        uvIndex = 0,
+        snow = 0,
+        snowDepth = 0,
+        precipitationType = const [],
+        precipitationProbability = 0,
+        precipitation = 0;
+
+  @override
+  List<Object?> get props => [
+    condition,
+    icon,
+    datetime,
+    temperature,
+    feelsLike,
+    humidity,
+    windSpeed,
+    pressure,
+    uvIndex,
+    snow,
+    snowDepth,
+    precipitationType,
+    precipitationProbability,
+    precipitation,
+  ];
 }
